@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portafolio de Mauro Fernández, desarrollador web especializado en sitios web dinámicos y responsivos. Descubre mis habilidades, proyectos y cómo contactarme.">
+
+    <title>Portafolio de Mauro Fernández | Desarrollador Web y Especialista en Tecnología</title>
+
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+<script src="index.js" ></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav id="navbar" class="navbar">
+            <ul id="nav-list" class="nav-list nav-links">
+                <li id="home" class="nav-item"><a href="#home-section" class="nav-link">Inicio</a></li>
+                <li id="about" class="nav-item"><a href="#about-section" class="nav-link">Sobre mí</a></li>
+                <li id="skills" class="nav-item"><a href="#skills-section" class="nav-link">Habilidades</a></li>
+                <li id="contact" class="nav-item"><a href="#contact-section" class="nav-link">Contacto</a></li>
+                <!-- Puedes agregar más secciones aquí -->
+            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home-section" class="home-section">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>Hola, soy <span class="highlight-name">Mauro Fernández</span>, un desarrollador web dedicado especializado en sitios web dinámicos y responsivos. Ofrezco desarrollo web personalizado, diseño de aplicaciones e integración de sistemas adaptados a tus necesidades. ¡Colaboremos para hacer realidad tus ideas!</p>
+
+        <a href="#about-section" class="cta-button">Conoce Más Sobre Mí</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="about-container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <img src="profile-image.jpeg" alt="Foto de Perfil" class="about-profile-image">
+                <div class="about-text">
+                    <p>Soy un desarrollador web autodidacta con conocimientos en lenguajes de programación como Python y Java. Mi experiencia también incluye administración de Linux, ciberseguridad y gestión de servidores web. Me apasiona desarrollar aplicaciones web robustas y seguras.</p>
+                    <p>Mi trayectoria profesional incluye dos años en Administranet, donde trabajé en diversos proyectos de desarrollo de sistemas. Adquirí experiencia en PHP y MySQL, además de habilidades en diseño web utilizando HTML, CSS y JavaScript. Este rol mejoró significativamente mis capacidades técnicas y mi comprensión del desarrollo de aplicaciones web.</p>
+                    <p>Además, he completado cursos en diseño web y pruebas de aplicaciones, y actualmente estoy cursando un título técnico en Desarrollo de Software en UTN. Esta educación continua me mantiene al tanto de las tendencias y novedades del sector.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="skills-section">
+        <div class="skills-container">
+            <h2>Habilidades</h2>
+            <p>Aquí tienes algunas de las habilidades y tecnologías en las que soy competente:</p>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Gestión de Bases de Datos</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Oracle SQL</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Tecnologías de Desarrollo</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Django</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Control de Versiones</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>GitLab</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Herramientas de Desarrollo</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Servidores Web y Alojamiento</h3>
+                    <ul>
+                        <li>Apache</li>
+                        <li>Nginx</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Pruebas y Gestión de Proyectos</h3>
+                    <ul>
+                        <li>Mantis</li>
+                        <li>TestLink</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Mi conjunto de habilidades abarca una amplia gama de tecnologías y herramientas, permitiéndome abordar diversos aspectos del desarrollo web, implementación y mantenimiento de manera efectiva.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section">
+        <div class="contact-container">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto, no dudes en enviarme un correo electrónico o conectar conmigo en las redes sociales. ¡Siempre estoy abierto a nuevas oportunidades y colaboraciones!</p>
+
+            <form id="contact-form" class="contact-form" method="POST">
+			
+                <label for="from_name">Nombre:</label>
+				<input type="text" id="from_name" name="from_name" required aria-labelledby="name-label">
+
+				<label for="email_id">Correo Electrónico:</label>
+				<input type="email" id="email_id" name="email_id" required aria-labelledby="email-label">
+
+				<label for="message">Mensaje:</label>
+				<textarea id="message" name="message" rows="4" required aria-labelledby="message-label"></textarea>
+
+                
+                <button type="submit" id="submit-button" class="submit-button">Enviar Mensaje</button>
+            </form>
+            
+            <p>O contacta conmigo directamente en: <a href="mailto:dev.maurofernandez@gmail.com" class="email-link">dev.maurofernandez@gmail.com</a></p>
+            
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mauro-fernandez-82483723b/" target="_blank" class="social-media-link">
+                    <img src="linkedin.png"  alt="Perfil de LinkedIn de Mauro Fernández" class="social-media-icon">
+                    LinkedIn
+                </a>
+                <a href="https://github.com/maurofer87" target="_blank" class="social-media-link">
+                    <img src="github.png"  alt="Perfil de GitHub de Mauro Fernández" class="social-media-icon">
+                    GitHub
+                </a>
+                <!-- Agrega más enlaces de redes sociales según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Mauro Fernández. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+    <script>
+	
+
+
+
+
+	document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-list');
+    navLinks.classList.toggle('active');
+});
+
+const navLinks = document.getElementById('nav-list');
+const navItems = navLinks.querySelectorAll('a');
+
+navItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Cerrar el menú cuando se haga clic en un enlace
+        navLinks.classList.remove('active');
+    });
+});
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,537 @@
+/* Estilo Global */
+
+
+body {
+   font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f2d;
+    color: #e0ffff;
+	 padding-top: 55px; /* Ajusta este valor para que el contenido no quede oculto detrás del header */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Header y Navbar */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #e0ffff;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #003c49;
+    position: fixed; /* Fija el header en la parte superior */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    top: 0; /* Posiciona el header en la parte superior */
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header a {
+    color: #e0ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #00e5ff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+	width: 100%; /* Asegura que el header ocupe todo el ancho */
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 55px; /* Ajusta esto si es necesario para que se alinee correctamente bajo el header */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #e0ffff;
+        border-bottom: 1px solid #003c49;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: #e0ffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #00e5ff;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Footer */
+
+
+.footer {
+    background-color: #000000; /* Fondo oscuro */
+    color: #00FFFF;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00FFFF;
+    text-shadow: 0 0 5px #00FFFF, 0 0 3px rgba(0, 0, 0);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Secciones */
+section {
+    padding: 2em;
+    margin: 1.5em auto;
+    max-width: 90%;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* Encabezados y Párrafos */
+h1, h2, h3 {
+    color: #00e5ff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #00e5ff;
+    border-radius: 4px;
+    background-color: #002f3c;
+    color: #e0ffff;
+}
+
+button {
+    background-color: #00e5ff;
+    color: #000;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #00b8d4;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Home Section */
+.home-section {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 0, 0)), url('path/to/your-background-image.jpg') no-repeat center center/cover; /* Gradiente + imagen */
+    color: #e0ffff;
+    text-align: center;
+    padding: 1rem 2rem 7rem;
+    position: relative;
+}
+
+
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+.home-section h1 {
+	margin-top: inherit;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: #00e5ff; /* Color aqua neon */
+    text-shadow: 0 0 12px #00ffffe6, 0 0 0px #00FFFF, 0 0 0px #00FFFF; /* Efecto neón moderado */
+}
+
+.home-section p {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-name {
+    font-weight: bold;
+    color: #00e5ff;
+    font-size: 1.3rem;
+    text-shadow: 0 0 10px #001f2d, 0 0 20px #00e5ff, 0 0 30px #002f3c, 0 0 40px #00b8d4; /* Resplandor exterior más fuerte */
+}
+
+
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00e5ff;
+    color: #001f2d;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #00b8d4;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.6); /* Efecto neón brillante */
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* About Section */
+.about-section {
+    text-align: center;
+    background: #000000; /* Fondo oscuro */
+    color: #e0ffff; /* Texto en aqua neon */
+}
+
+/* Contenedor de About */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #002d4047; /* Fondo ligeramente transparente para destacar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2); /* Sombra con toque neón */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00e5ff; /* Borde resaltante */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Efecto neón alrededor de la imagen */
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #e0ffff; /* Texto en aqua neon */
+}
+
+/* Título de la Sección de About */
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #00FFFF; /* Color aqua neon */
+    text-shadow: 0 0 12px #00ffffe6, 0 0 0px #00FFFF, 0 0 0px #00FFFF;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Contenedor de Skills */
+.skills-container {
+    text-align: center;
+}
+
+.skills-container h2 {
+    color: #00e5ff; /* Color de encabezado neon */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #00ffffe6, 0 0 0px #00FFFF, 0 0 0px #00FFFF;
+}
+
+.skills-container p {
+    color: #e0ffff;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Categoría de Skills */
+.skills-category {
+    background-color: #002d4047; /* Fondo oscuro con un toque de color */
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px); /* Tres columnas con espacio entre ellas */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Sombra con toque neón */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto neón en la categoría */
+.skills-category::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 2px solid #00FFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+    z-index: -1;
+}
+
+.skills-category h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category li {
+    color: #e0ffff;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+/* Añadir transición a los elementos cuando el mouse pasa sobre ellos */
+.skills-category:hover {
+    background-color: #003c50;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+/* Estilo General de la Sección de Contacto */
+
+
+.contact-section {
+        text-align: center;
+    background: #000000; /* Fondo oscuro */
+    color: #e0ffff; /* Texto en aqua neon */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+}
+
+/* Contenedor de Contacto */
+
+
+
+.contact-container {
+	padding: 40px 20px;
+    background: linear-gradient(135deg, #002d40, #003c50); /* Gradiente con tonos oscuros */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2); /* Sombra con toque neón */
+    max-width: 900px;
+    z-index: 1; /* Para que el contenido esté por encima del fondo animado */
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #00e5ff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #00ffffe6, 0 0 0px #00FFFF, 0 0 0px #00FFFF;
+}
+
+.contact-container p {
+    color: #e0ffff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Estilo del Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #001f2d; /* Fondo oscuro para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4); /* Sombra con toque neón */
+    border: 2px solid #00e5ff; /* Borde neón */
+}
+
+/* Estilo de campos del formulario */
+.contact-form label {
+    color: #00e5ff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #00e5ff;
+    border-radius: 5px;
+    background-color: #003d4d;
+    color: #e0ffff;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00b8d4;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #00e5ff;
+    color: #001f2d;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00b8d4;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+/* Estilo del Enlace de Email */
+.email-link {
+    color: #00e5ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de Redes Sociales */
+.social-media {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-link {
+    color: #00e5ff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
